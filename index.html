@@ -25,17 +25,20 @@
 }
     </style>
   </head>
-  <body>
-<h2 style="text-align:center; color:white; margin:10px;">
-3D Earthquake Analysis
-</h2>
+<body>
 
-<p style="text-align:center; color:white; margin-bottom:10px;">
-Interactive visualization of earthquake clustering and magnitude distribution using Python and PyDeck.
-</p>
-    <div id="deck-container">
-    </div>
-  </body>
+<div style="position:absolute; top:0; width:100%; z-index:1; text-align:center;">
+  <h2 style="color:white; margin:10px;">
+    3D Earthquake Analysis
+  </h2>
+  <p style="color:white;">
+    Interactive visualization of earthquake clustering and magnitude distribution using Python and PyDeck.
+  </p>
+</div>
+
+<div id="deck-container"></div>
+
+</body>
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
